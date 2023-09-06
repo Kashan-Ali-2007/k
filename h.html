@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .animate-bounce {
+            animation: bounce 4s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateX(+100%);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+        }
+        .hover\:shadow-glow:hover {
+        transition: box-shadow 0.3s;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.842);
+    }
+ 
+    </style>
+    <title>Portfolio</title>
+</head>
+<body class="bg-gray-100 overflow:">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  text-white py-4 rounded-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-semibold flex">
+                
+                <h1 class="hover:shadow-glow rounded-full px-4">KASHAN ALI</h1>
+            </div>
+            <ul class="flex space-x-6 pl-4 ">
+                <li><a href="#about" class="hover:shadow-glow rounded-lg">About</a></li>
+                <li><a href="Landing page/index.html" class="hover:shadow-glow rounded-lg">Projects</a></li>
+                <li><a href="#contact" class="hover:shadow-glow rounded-lg mr-1">Contact </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center ">
+            <img src="me.png" alt="Your Profile Picture" class="w-36  mt-2 rounded-full animate-bounce mx-auto hover:shadow-glow">
+            <h1 class="text-4xl font-semibold mb-4 underline">About Me</h1>
+       <p class="text-lg text-white justify-end hover:shadow-glow rounded-lg">"As a passionate web developer, I thrive on crafting engaging and user-friendly websites.<br> My journey began with a fascination for coding and design, which has evolved into a deep commitment to creating seamless digital experiences. <br> With a focus on clean code and responsive design, I bring ideas to life by blending aesthetics and functionality. <br>Constantly curious and adaptive, I embrace the ever-changing landscape of web technologies, ensuring that <br>I deliver innovative and memorable solutions. <br>Whether it's coding intricate interactions or optimizing performance, I'm dedicated to pushing boundaries and enhancing user engagement through every project I undertake."</p>
+           
+        </div>
+    </section>
+    <section id="projects" class="bg-gray-800  py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-semibold mb-4 text-white underline">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow-md">
+                    <h2 class="text-xl font-semibold mb-2 underline rounded-lg " >Project 1</h2>
+                    <p class="text-gray-700">This is a description of my first project...</p>
+                    <button class="inline-flex items-center bg-blue-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0" onclick="">View
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </button>
+                </div>
+                <div class="bg-white p-6 rounded shadow-md">
+                    <h2 class="text-xl font-semibold mb-2 underline rounded-lg ">Project 2</h2>
+                    <p class="text-gray-700">This is a description of my second project...</p>
+                    <button class="inline-flex items-center bg-blue-300 border-0 py-1 px-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0">Button
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-semibold mb-4 underline">Contact Me</h1>
+            <p class="text-lg textwhite hover:shadow-glow rounded-full">You can reach me at: kashanaps@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-4 rounded-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 KASHAN ALI. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>
